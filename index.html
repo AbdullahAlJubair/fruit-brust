@@ -178,11 +178,45 @@
 
 
         <!-- Deal Section -->
-        <section class="mx-w[1440px] mx-auto">
-            <!-- Section Content -->
-            <div class="flex justify-between items-center">
-                <div></div>
-                <div></div>
+        <section class="max-w-[1440px] mx-auto mt-10">
+            <!--Time Section And Content -->
+            <div class="flex flex-col lg:flex-row justify-around items-center py-10">
+                <div class="max-w-full lg:max-w-xl text-center lg:text-left"> <!--Content Section-->
+                    <h4 class="font-lato text-2xl lg:text-5xl font-extrabold text-black mb-5">Deal of the day</h4>
+                    <p class="font-lato text-base font-medium text-black">
+                        Contrary to popular belief, is not simply random text. It has roots in a piece <br> 
+                        of classical Latin literature from 45 BC, making it over 2000 years old.
+                    </p>
+                </div>
+                <!-- Time Section -->
+                <div>
+                    <div class="grid grid-flow-col gap-5 text-center auto-cols-max mt-10 lg:mt-0">
+                        <div class="flex flex-col">
+                          <span class="countdown font-lato font-extrabold text-3xl lg:text-5xl">
+                            <span style="--value:15;"></span>
+                          </span>
+                          Days
+                        </div> 
+                        <div class="flex flex-col">
+                          <span class="countdown font-lato font-extrabold text-3xl lg:text-5xl">
+                            <span style="--value:10;"></span>
+                          </span>
+                          Hours
+                        </div> 
+                        <div class="flex flex-col">
+                          <span class="countdown font-lato font-extrabold text-3xl lg:text-5xl">
+                            <span style="--value:24;"></span>
+                          </span>
+                          Min
+                        </div> 
+                        <div class="flex flex-col">
+                          <span class="countdown font-lato font-extrabold text-3xl lg:text-5xl">
+                            <span style="--value:50;"></span>
+                          </span>
+                          Sec
+                        </div>
+                    </div>
+                </div>
             </div>
 
         </section>
