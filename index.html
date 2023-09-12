@@ -12,13 +12,15 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.7.3/dist/full.css" rel="stylesheet" type="text/css" />
     <!-- Tailwind CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Fontawsome CDN -->
+    <script src="https://kit.fontawesome.com/3f06f2bebd.js" crossorigin="anonymous"></script>
     <!-- Color Cutomization -->
     <script>
         tailwind.config = {
           theme: {
             extend: {
               colors: {
-                clifford: '#da373d',
+                'primary-tomato': '#F85559',
               }
             }
           }
@@ -32,9 +34,45 @@
     </style>
 </head>
 <body>
-    <head>
+    <head class="">
         <!-- Navigation Section -->
-        
+        <div class="navbar lg:bg-primary-tomato justify-between lg:rounded-full lg:px-4 max-w-[1440px] my-4 mx-auto">
+            <div class="order-2 lg:order-1">
+                <div class="">
+                    <div class="dropdown">
+                        <label tabindex="0" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                        </label>
+                        <ul tabindex="0" class="menu menu-sm dropdown-content right-0 mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a>Home</a></li>
+                            <li><a>About Us</a></li>
+                            <li><a>Shop</a></li>
+                            <li><a>All Fruits</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="navbar-center hidden lg:flex text-lg font-medium text-white">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a class="focus:bg-white hover:bg-white active:bg-white">Home</a></li>
+                        <li><a class="focus:bg-white hover:bg-white active:bg-white">About Us</a></li>
+                        <li><a class="focus:bg-white hover:bg-white active:bg-white">Shop</a></li>
+                        <li><a class="focus:bg-white hover:bg-white active:bg-white">All Fruits</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- ----------------------- -->
+            <div class="order-1 lg:order-2 flex gap-4">
+                <img src="images/logo.png" alt="" class="w-7 h-8 lg:w-14 lg:h-16">
+              <a class="normal-case text-2xl lg:text-3xl text-black lg:text-white font-bold">Fruit Burst</a>
+            </div>
+            <div class=" hidden lg:flex flex-none lg:order-3 relative">
+              <div class="form-control">
+                <input type="text" placeholder="Search here" class="input input-bordered max-w-sm rounded-full" />
+                <i class="fas fa-search absolute top-4 end-4"></i>
+              </div>
+            </div>
+        </div>
+
 
     </head>
     <main>
